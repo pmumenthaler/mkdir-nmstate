@@ -1,0 +1,19 @@
+apiVersion: k8s.cni.cncf.io/v1
+kind: NetworkAttachmentDefinition
+metadata:
+  name: br-ex-network
+  namespace: test-vms
+  resourceVersion: '2253715'
+  uid: 89560c39-2507-4009-810e-5e0acc11db79
+spec:
+  config: |-
+    {
+        "cniVersion": "0.4.0",
+        "name": "br-ex-network",
+        "type": "ovn-k8s-cni-overlay",
+        "excludeSubnets": "",
+        "mtu": 1500,
+        "netAttachDefName": "test-vms/br-ex-network",
+        "subnets": "",
+        "topology": "localnet"
+    }
