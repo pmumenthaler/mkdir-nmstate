@@ -5,6 +5,8 @@ metadata:
   namespace: test-vms
   resourceVersion: '2253715'
   uid: 89560c39-2507-4009-810e-5e0acc11db79
+  labels:
+    app.kubernetes.io/instance: kubevirt-network-config
 spec:
   config: |-
     {
